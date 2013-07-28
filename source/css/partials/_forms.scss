@@ -1,0 +1,145 @@
+input, select, textarea {
+    background-color: $bgc;
+    border: 1px solid shade($bgc, 7%);
+    color: tint($text-c, 40%);
+    padding: 1em;
+    
+    border-radius: .2em;
+    box-shadow: inset 0 0 1em rgba(0,0,0,.02);
+    width: 100%;
+    outline: none;
+    @include g-space(margin-bottom);
+    @include transition(all .4s);
+
+    &:hover {
+        border: 1px solid shade($bgc, 15%);
+    }
+
+    &:focus {
+        color: $text-c;
+        border: 1px solid shade($bgc, 20%);
+        box-shadow: inset 0 0 .2em rgba(0,0,0,0.1);
+    }
+}
+
+textarea {
+    resize: vertical;
+    min-height: 9em;
+}
+
+label {
+    color: tint($text-c, 20%);
+    padding: 1em 0;
+    @include g-space(margin-bottom);
+    text-align: right;
+    clear: both;
+}
+
+fieldset {
+    padding: 0 0 1em;
+    border: none;
+    border-bottom: 1px solid darken($bgc, 10%);
+    // margin-bottom: 2em;
+
+    &:last-child {
+        margin-bottom: none;
+        border-bottom: none;
+    }
+}
+
+legend {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+button {
+    // font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    background-color: $footer-bgc;
+    color: lighten($footer-c, 10%);
+    border: .1em solid lighten(desaturate($footer-bgc, 20%), 10%);
+    border-radius: .1em;
+    display: inline-block;
+    font-size: 2em;
+    padding: .5em 1em;
+    @include transition(background-color .3s, color .3s, border-color .3s);
+
+    &:hover, &:focus, &:hover, &:active {
+        background-color: lighten($footer-c, 10%);
+        color: $footer-bgc;
+        border-color: $footer-c;
+    }
+
+    &:active {
+        @include transform(translateY(2px));
+    }
+}
+
+.client-info-form {
+    overflow: hidden;
+    padding: 1em 2em;
+
+    input, select, textarea {
+        width: 100%;
+    }
+
+    @include at-breakpoint($small-break) {
+        label {
+            display: inline-block;
+            width: 40%;
+            // padding-right: 1em;
+            text-align: right;
+            float: left;
+            clear: right;
+        }
+
+        input, select, textarea {
+            width: 60%;
+            float: right;
+
+            & + .duplicate-input {
+                // position: absolute;
+                clear: both;
+                float: right;
+                position: relative;
+                left: 1.5em;
+                display: block;
+                height: 1em;
+                width: 1em;
+                top: -3em;
+                margin-bottom: -1em;
+                overflow: hidden;
+                -webkit-border-radius: 1em;
+                        border-radius: 1em;
+                background-color: shade($bgc, 10%);
+                border: 1px solid shade($bgc, 15%);
+                text-indent: -999em;
+            }
+        }
+    }
+}
+
+.contact-form {
+    max-width: 40em;
+    margin: 0 auto;
+    overflow: hidden;
+
+    button {
+        margin-bottom: 2px;
+    }
+}
+
+@include at-breakpoint ($mid-break) {
+    .contact-form {
+        label {
+            @include span-columns($mid-break / 4 alpha, $mid-break);
+        }
+        input, textarea {
+            @include span-columns($mid-break / 2 , $mid-break);
+        }
+        button {
+            @include span-columns($mid-break / 2 , $mid-break);
+            @include pre($mid-break / 4, $mid-break);
+        }
+    }
+}

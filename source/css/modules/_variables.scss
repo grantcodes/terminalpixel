@@ -1,0 +1,71 @@
+// Fonts
+
+$font-size: 1.2;
+$line-height: 1.5;
+
+$ratio: fourth();
+
+$xxxsmallem : ms(-4 , 1em);
+$xxsmallem  : ms(-3 , 1em);
+$xsmallem   : ms(-2 , 1em);
+$smallem    : ms(-1 , 1em);
+$normem     : 1em;
+$medem      : ms(1 , 1em);
+$largeem    : ms(2 , 1em);
+$xlargeem   : ms(3 , 1em);
+$xxlargeem  : ms(4 , 1em);
+$xxxlargeem : ms(5 , 1em);
+
+
+// Grid
+
+$small-break: 4;
+$mid-break: 9;
+$large-break: 12;
+$grid-padding: 1em;
+$column-width: 3em;
+$gutter-width: 1.5em;
+$container-style: fluid;
+$border-box-sizing: true;
+
+
+// Colors
+
+// Color Scheme: http://color.hailpixel.com/#FBFDFE,BACFE8,6694CC,2A5B7E,112632,060C13,A84538,5EC97E,;
+
+$white: #FBFDFE;
+$v-light-blue: #BACFE8;
+$light-blue: #6694CC;
+$blue: #2A5B7E;
+$dark-blue: #112632;
+$black: #222;
+$red: #A84538;
+$green: #5EC97E;
+$yellow: #C6C653;
+$purple: #A166CC;
+$brown: #674122;
+$dark-red: #602220;
+$dark-green: #4B6321;
+
+$text-c: $black;
+$bgc: $white;
+
+$link-c: $light-blue;
+$link-hover-c: $red;
+
+$header-bgc: $light-blue;
+$header-c: $bgc;
+$header-hover-c: $red;
+
+$footer-bgc: $dark-blue;
+$footer-c: $v-light-blue;
+
+// Tech pill colours
+
+$sass: $blue;
+$html5: $dark-blue;
+$css3: $green;
+$middleman: $red;
+$wordpress: $black;
+$js: $purple;
+$jquery: $brown;

@@ -1,0 +1,31 @@
+<% data.work.each do |site| %>
+	<article class="work-item">
+
+		<a href="<%= site.url %>">
+			<img src="/img/work/<%= site.image %>" alt="<%= site.title %> Screenshot">
+		</a>
+		
+		<div class="description">
+		
+			<header>
+				<h1><a href="<%= site.url %>"><%= site.title %></a></h1>
+			</header>
+
+			<%= site.description %>
+		
+		</div>
+		
+		<footer>
+			<% if site.source %>
+				<div class="technologies">
+					<% site.tech.each do |tech| %>
+						<span class="tech <%= tech %>"><%= tech %></span>
+					<% end %>
+				</div>
+				
+				<a href="<%= site.source %>" class="view-source">View the code</a>
+			<% end %>
+		</footer>
+	
+	</article>
+<% end %>

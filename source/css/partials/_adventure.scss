@@ -1,0 +1,31 @@
+#adventure {
+    width: 133px * 5;
+    height: 75px * 5;
+    position: relative;
+    overflow: hidden;
+    background: url(/img/adventure/dev-point.svg), url(/img/adventure/path.svg);
+    background-position: center center, top left;
+    background-size: 40% auto, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+
+    &:after {
+    	position: absolute;
+    	content: '';
+    	width: 15%;
+    	height: 100%;
+    	right: 0;
+    	background: url(/img/adventure/sword.svg);
+	    background-repeat: no-repeat;
+	    background-size: 100% auto;
+	    background-position: bottom right;
+    	@include transform-origin(bottom, left);
+    	@include transform(rotate(-17deg) translateX(5%) translateY(8%));
+    	@include animation(sword 2s infinite alternate);
+    }
+}
+
+@include keyframes (sword) {
+	100% {
+    	@include transform(rotate(-19deg) translateX(3%) translateY(7%));
+	}
+}

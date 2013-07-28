@@ -1,0 +1,71 @@
+html {
+	font-size: #{$font-size}em;
+	line-height: $line-height;
+	color: $text-c;
+	font-family: 'Roboto', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+p {
+	margin-top: 0;
+	@include g-space(margin-bottom);
+}
+
+h1 {
+	font-size: $xlargeem;
+	@include g-space(margin-top);
+	@include g-space(margin-bottom, 2);
+}
+
+h2 {
+	font-size: $largeem;
+	@include g-space(margin-top, 2);
+	@include g-space(margin-bottom);
+}
+
+h3 {
+	font-size: $medem;
+	@include g-space(margin-top);
+	margin-bottom: 0;
+}
+
+h4, h5, h6 {
+	font-size: $normem;
+	@include g-space(margin-top);
+	margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Titillium Web';
+	font-weight: 600;
+}
+
+
+.head-nav-inner {
+	font-family: 'pixelated';
+}
+
+blockquote {
+	font-style: italic;
+	border-left: 2px solid $link-c;
+	padding: .5em 1em;
+	margin-left: 1em;
+	padding-right: 0;
+	
+	p {
+		margin-bottom: 0;
+	}
+	
+	p + p {
+		margin-top: $line-height * 1em;
+	}
+}
+
+.quote-by {
+	margin-left: 1.5em;
+	font-size: 0.75em;
+}
+
+pre {
+	font-size: .9em;
+}

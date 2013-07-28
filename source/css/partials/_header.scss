@@ -1,0 +1,156 @@
+.head-nav-outer {
+	background-color: $header-bgc;
+	color: $header-c;
+	overflow: hidden;
+	// background-image: url(../img/sun.svg);
+	// background-repeat: no-repeat;
+	
+	// background-position: -2.5em bottom;
+	// background-position: -2.5em -webkit-calc(100% + 2.5em);
+	// background-position: -2.5em -moz-calc(100% + 2.5em);
+	// background-position: -2.5em -ms-calc(100% + 2.5em);
+	// background-position: -2.5em calc(100% + 2.5em);
+	
+	// background-position: -2.5em -2.5em;
+	
+	// background-position: 25% -2.5em;
+	
+	// background-position: 50% -2.5em;
+	
+	// background-position: 75% -2.5em;
+	
+	// background-position: 75% -2.5em;
+	
+	// background-position: top right;
+	// background-position: -webkit-calc(100% + 2.5em) -2.5em;
+	// background-position: -moz-calc(100% + 2.5em) -2.5em;
+	// background-position: -ms-calc(100% + 2.5em) -2.5em;
+	// background-position: calc(100% + 2.5em) -2.5em;
+	
+	// background-position: bottom right;
+	// background-position: -webkit-calc(100% + 2.5em) -webkit-calc(100% + 2.5em);
+	// background-position: -moz-calc(100% + 2.5em) -moz-calc(100% + 2.5em);
+	// background-position: -ms-calc(100% + 2.5em) -ms-calc(100% + 2.5em);
+	// background-position: calc(100% + 2.5em) calc(100% + 2.5em);
+	
+	@include background-size(5em 5em);
+	
+	&.breakfast {
+		background-color: $light-blue;
+		background-image: url(../img/sun.svg);
+		background-repeat: no-repeat;
+		background-position: -2.5em bottom;
+		background-position: -2.5em -webkit-calc(100% + 2.5em);
+		background-position: -2.5em -moz-calc(100% + 2.5em);
+		background-position: -2.5em -ms-calc(100% + 2.5em);
+		background-position: -2.5em calc(100% + 2.5em);
+		& + .header-svg {
+			fill: $light-blue;
+		}
+
+		a, h1 {
+			&:hover, &:active, &:focus {
+				text-shadow: .1em -.1em 0 rgba(0,0,0,.6);
+			}
+		}
+	}
+
+	&.lunch {
+		background-color: $light-blue;
+		background-image: url(../img/sun.svg);
+		background-repeat: no-repeat;
+		background-position: 50% -2.5em;
+		& + .header-svg {
+			fill: $light-blue;
+		}
+
+		a, h1 {
+			&:hover, &:active, &:focus {
+				text-shadow: 0 .1em 0 rgba(0,0,0,.6);
+			}
+		}
+	}
+
+	&.dinner {
+		background-color: $blue;
+		background-image: url(../img/moon.svg);
+		background-repeat: no-repeat;
+		background-position: top left;
+		& + .header-svg {
+			fill: $blue;
+		}
+
+		a, h1 {
+			&:hover, &:active, &:focus {
+				text-shadow: .1em .05em 0 rgba(255,255,255,.5);
+			}
+		}
+	}
+
+	
+	a, h1 {
+		color: $header-c;
+		font-family: 'pixelated';
+		@include transition(all .4s ease-in);
+
+		&:hover, &:active, &:focus {
+			text-shadow: .1em .1em 0 rgba(0,0,0,.6);
+		}
+	}
+
+	h1 {
+		text-align: center;
+		line-height: 1em;
+		font-size: $xxlargeem;
+		@include animation(bounceInLeft 1s);
+		@include at-breakpoint($large-break) {
+			text-align: right;
+		}
+		// font-weight: normal;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	ul {
+		@include animation(bounceInDown 1s);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		display: inline-block;
+		a {
+			font-size: $largeem;
+			padding: 0.5em;
+			
+			&:before {
+				content: '//';
+				letter-spacing: -.3em;
+				margin-right: 0.6em;
+			}
+		}
+	}
+
+	// &::after {
+ //        content: " ";
+ //        clear: both;
+ //        display: block;
+ //        background: url(../img/header.svg) top;
+ //        background-repeat: repeat-x;
+ //        background-color: $bgc;
+ //        height: 130px;
+ //        margin-top: 0.5em;
+ //    }
+}
+
+.header-svg {
+	width: 100%;
+	height: 130px;
+	fill: $header-bgc;
+	display: block;
+}
+
+@include animate;

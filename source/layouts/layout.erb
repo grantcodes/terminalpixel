@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title><%= data.page.title || "Terminal Pixel" %></title>
+
+  <%= stylesheet_link_tag "main" %>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Titillium+Web:600,300italic,300,200,200italic|Roboto:100,300,300italic,900">
+  <%= javascript_include_tag  "all" %>
+</head>
+
+<body class="<%= page_classes %>">
+  <div class="head-nav-outer">
+    <div class="head-nav-inner">
+      <header class="main-header">
+        <h1><a href="/">Terminal Pixel</a></h1>
+      </header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/work/">Work</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/say-hello/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <%= partial "partials/header-svg" %>
+  <main class="main">
+    <%= yield %>
+  </main>
+  <%= partial "partials/footer-svg" %>
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <nav class="social-nav">
+          <a href="https://www.facebook.com/pages/Terminal-Pixel/" data-icon="&#xe000;"><span class="screen-reader-text">Facebook</span></a>
+          <a href="https://twitter.com/terminalpixel" data-icon="&#xe001;"><span class="screen-reader-text">Twitter</span></a>
+          <a href="https://github.com/terminalpixel" data-icon="&#xe002;"><span class="screen-reader-text">GitHub</span></a>
+          <a href="mailto:blether@terminalpixel.co.uk" data-icon="&#xe003;"><span class="screen-reader-text">Email</span></a>
+      </nav>
+      <h2>Boring Stuff</h2>
+      <p>I use cookies for anonymous usage information. Thats all.<br>Promise.</p>
+
+      <p>&copy; Terminal Pixel 2013</p>
+      <span class="terminal-pixel"></span>
+    </div>
+  </footer>
+  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-38380342-1');ga('send','pageview');
+  </script>
+</body>
+</html>

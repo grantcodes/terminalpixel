@@ -1,0 +1,291 @@
+$icon-pixel-size: 1;
+.big-icon {
+	display: inline-block;
+	line-height: 1;
+	@include g-rems(padding, $icon-pixel-size, 0);
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: $xxxlargeem;
+	// border-radius: 50%;
+	text-align: center;
+	position: relative;
+	background-color: $v-light-blue;
+	color: $blue;
+	
+	span {
+		display: block;
+		width: 1em;
+		height: 1em;
+	}
+
+	&:after, &:before {
+		content: '';
+		background-color: $v-light-blue;
+		@include g-rems(width, $icon-pixel-size);
+		height: 1em;
+		@include g-rems(top, $icon-pixel-size);
+		position: absolute;
+		@include g-rems(right, -$icon-pixel-size);
+	}
+
+	&:before {
+		right: auto;
+		@include g-rems(left, -$icon-pixel-size);
+	}
+}
+
+pre {
+    padding: 1em 0;
+    border-top: 1px solid mix($text-c, $bgc, 10%);
+    border-bottom: 1px solid mix($text-c, $bgc, 10%);
+}
+
+.tagline {
+    font-size: 2.5em;
+    @include at-breakpoint($mid-break) {
+        font-size: 4em;
+    }
+    @include at-breakpoint($large-break) {
+        font-size: 5em;
+    }
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-family: pixelated;
+	line-height: .8;
+	
+	span {
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+}
+.i-make {
+	font-size: 1.599em;
+	position: relative;
+	left: .025em;
+}
+
+
+.info-text h2 {
+	font-size: $xlargeem;
+}
+
+.work-item {
+    border-bottom: 1px solid mix($text-c, $bgc, 10%);
+    
+    &:last-child {
+        border-bottom-style: none;
+    }
+    
+    a img {
+        border: .5em solid $link-c;
+        @include transition(all .3s);
+        &:hover {
+            border-color: $link-hover-c;
+        }
+    }
+    h1 {
+        margin-top: 0;
+        @include g-space('margin-bottom', 2);
+    }
+}
+
+.tech {
+    display: inline-block;
+    border-radius: .3em;
+    padding: 0 0.3em;
+    background-color: black;
+    color: white;
+    color: rgba(255,255,255,.9);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: $smallem;
+    
+    &.middleman {
+        background-color: $middleman;
+    }
+
+    &.sass {
+        background-color: $sass;
+    }
+
+    &.html5 {
+        background-color: $html5;
+    }
+
+    &.wordpress {
+        background-color: $wordpress;
+    }
+
+    &.css3 {
+        background-color: $css3;
+    }
+
+    &.js {
+        background-color: $js;
+    }
+
+    &.jquery {
+        background-color: $jquery;
+    }
+}
+
+$star-width: 1.2em;
+
+.skill-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    li {
+        display: block;
+        
+        &:after {
+            display: block;
+            content: '';
+            float: right;
+            height: 1.2em;
+            background-image: url(../img/star.svg);
+            background-repeat: repeat-x;
+            background-position: left center;
+            @include background-size(auto 100%);
+        }
+
+        @include g-space('margin-bottom', .5);
+
+        @include at-breakpoint ($mid-break) {
+            @include span-columns (4, 8);
+            @include nth-omega(2n);
+            
+            &:nth-child(2n - 1) {
+                clear: both;
+            }
+        }   
+    }
+
+    .one:after {
+        margin-right: $star-width * 4.5;
+        width:$star-width * .5;
+    }
+
+    .two:after {
+        margin-right: $star-width * 4;
+        width:$star-width;
+        
+    }
+
+    .three:after {
+        margin-right: $star-width * 3.5;
+        width:$star-width * 1.5;
+        
+    }
+
+    .four:after {
+        margin-right: $star-width * 3;
+        width:$star-width * 2;
+        
+    }
+
+    .five:after {
+        margin-right: $star-width * 2.5;
+        width:$star-width * 2.5;
+        
+    }
+
+    .six:after {
+        margin-right: $star-width * 2;
+        width:$star-width * 3;
+        
+    }
+
+    .seven:after {
+        margin-right: $star-width * 1.5;
+        width:$star-width * 3.5;
+        
+    }
+
+    .eight:after {
+        margin-right: $star-width * 1;
+        width:$star-width * 4;
+        
+    }
+
+    .nine:after {
+        margin-right: $star-width * .5;
+        width:$star-width * 4.5;
+        
+    }
+
+    .ten:after {
+        margin-right: $star-width * 0;
+        width:$star-width * 5;
+        
+    }
+}
+
+.freedom {
+    max-width: 50%;
+    float: right;
+    margin: 0 0 .5em .5em;
+}
+
+.terminal-pixel {
+    margin: 0 auto 3em;
+    display: inline-block;
+    line-height: 0;
+    outline: 0;
+    // cursor: pointer;
+
+    &:before, &:after {
+        content: url(../img/logo-eyes.svg);
+        display: block;
+        margin: 0;
+        padding: 0;
+        opacity: .6;
+        @include transition(all .5s);
+    }
+
+    &:after {
+        content: url(../img/logo-mouth.svg);
+    }
+
+    &:hover, &:active, &:focus {
+        outline: none;
+
+        &:before {
+            @include transform(scale(1.2) rotateX(180deg));
+            // @include transform(rotate(360deg));
+        }
+
+        &:after {
+            @include transform(scaleY(4));
+            // @include transform(scaleY(4));
+        }
+    }
+}
+
+.lt-ie9 .terminal-pixel {
+    @include transform(none);
+    background: url(../img/logo.gif) no-repeat;
+    height: 9px;
+    width: 13px;
+    &:before, &:after {
+        content: '';
+    }
+
+    &:after {
+        content: '';
+    }
+
+    &:hover, &:active {
+
+        &:before {
+            @include transform(none);
+        }
+
+        &:after {
+            @include transform(none);
+        }
+    }
+}

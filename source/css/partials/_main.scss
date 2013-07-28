@@ -1,0 +1,21 @@
+html {
+	background-color: $bgc;
+}
+
+a {
+	color: $link-c;
+	@include transition(all .3s);
+	
+	&:active, &:focus, &:hover {
+		color: $link-hover-c;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.main {
+	@include animation(fadeIn .7s);
+}

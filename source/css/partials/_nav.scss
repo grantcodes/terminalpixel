@@ -1,0 +1,15 @@
+// .main-nav {
+// 	li,a {
+// 		display: block;
+// 		@include at-breakpoint($mid-break) {
+// 			display: inline;
+// 		}
+// 	}
+// }
+
+.main-nav {
+	text-align: center;
+	@include at-breakpoint($large-break) {
+		text-align: left;
+	}
+}

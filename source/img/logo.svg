@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="13px"
+   height="9px"
+   class="terminal-pixel-svg"
+   >
+   <defs>
+     <style type="text/css"><![CDATA[
+        .eyes, .mouth {
+          fill: rgba(0,0,0,.4);
+        }
+
+        .eyes:hover {
+          transition-property: all;
+          fill: #000000;
+          transition-duration: .7s;
+            -webkit-transform: scale(2);
+               -moz-transform: scale(2);
+                -ms-transform: scale(2);
+                 -o-transform: scale(2);
+                    transform: scale(2);
+        }
+      ]]></style>
+   </defs>
+  <g class="eyes">
+    <rect
+       width="1"
+       height="1"
+       x="0"
+       y="0" />
+    <rect
+       width="1"
+       height="1"
+       x="1"
+       y="1" />
+    <rect
+       width="1"
+       height="1"
+       x="2"
+       y="2" />
+    <rect
+       width="1"
+       height="1"
+       x="3"
+       y="3" />
+    <rect
+       width="1"
+       height="1"
+       x="1"
+       y="3" />
+    <rect
+       width="1"
+       height="1"
+       x="8"
+       y="0" />
+    <rect
+       width="1"
+       height="1"
+       x="9"
+       y="1" />
+    <rect
+       width="1"
+       height="1"
+       x="10"
+       y="2" />
+    <rect
+       width="1"
+       height="1"
+       x="11"
+       y="3" />
+    <rect
+       width="1"
+       height="1"
+       x="12"
+       y="4" />
+    <rect
+       width="1"
+       height="1"
+       x="3"
+       y="1" />
+    <rect
+       width="1"
+       height="1"
+       x="4"
+       y="0" />
+    <rect
+       width="1"
+       height="1"
+       x="4"
+       y="4" />
+    <rect
+       width="1"
+       height="1"
+       x="0"
+       y="4" />
+    <rect
+       width="1"
+       height="1"
+       x="11"
+       y="1" />
+    <rect
+       width="1"
+       height="1"
+       x="12"
+       y="0" />
+    <rect
+       width="1"
+       height="1"
+       x="9"
+       y="3" />
+    <rect
+       width="1"
+       height="1"
+       x="8"
+       y="4" />
+  </g>
+  <g class="mouth">
+    <rect
+       width="7"
+       height="1"
+       x="3"
+       y="8" />
+  </g>
+</svg>

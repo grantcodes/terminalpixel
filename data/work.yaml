@@ -1,0 +1,18 @@
+- title: Alpha Laundry Services
+  url: http://www.alphalaundryservices.com/
+  source: https://github.com/terminalpixel/alpha-laundry-services/
+  image: alpha-laundry-services.jpg
+  tech: [middleman, sass, html5, css3, js, jquery]
+  description: > 
+      <p>A single page website for a small family run laundry business.</p>
+      <p>It employs a very clean and simple design and a couple of nice flourishes to add an extra bit of style to the site.</p>
+
+
+
+- title: Terminal Pixel
+  url: http://www.terminalpixel.co.uk/
+  source: https://github.com/terminalpixel/terminalpixel/
+  image: terminal-pixel.jpg
+  tech: [middleman, sass, html5, css3, js]
+  description: > 
+      <p>This website that you are looking at right now. I might be cheating by including it here but I'm quite proud of it and it serves as a good example of my skillset.</p>

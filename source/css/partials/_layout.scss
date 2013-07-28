@@ -1,0 +1,77 @@
+
+.head-nav-inner, .footer-inner, .main {
+	@include container($small-break, $mid-break, $large-break);
+	@include g-rems(max-width, 50);
+	margin: 0 auto;
+	// padding: 0 $grid-padding;
+}
+
+.main-header {
+	@include at-breakpoint($large-break) {
+		@include span-columns($large-break / 3, $large-break);
+	}
+}
+
+.head-nav-inner {
+	position: relative;
+}
+
+.main-nav {
+	@include at-breakpoint($mid-break) {
+		@include g-space(margin-bottom, 1.8);
+		
+		li:first-child + li {
+			min-width: 50%; // Make wide so lines split to 2 by 2
+		}
+	}
+	@include at-breakpoint($large-break) {
+		@include span-columns($large-break / 3 * 2, $large-break);
+		@include omega;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.info-text {
+	@include at-breakpoint($mid-break) {
+		@include span-columns($mid-break / 3, $mid-break);
+	}
+	@include at-breakpoint($large-break) {
+		@include span-columns($large-break / 3, $large-break);
+	}
+
+	& + .info-text + .info-text {
+		@include omega;
+	}
+}
+
+.work-item {
+	@include g-space(margin-bottom, 1);
+	@include g-space(padding-bottom, 1);
+	clear: both;
+	overflow: hidden;
+
+	.description {
+		@include at-breakpoint($mid-break) {
+			@include span-columns($mid-break / 3 * 2, $mid-break);
+		}
+		@include at-breakpoint($large-break) {
+			@include span-columns($large-break / 4 * 3, $large-break);
+		}
+	}
+
+	footer {
+		@include at-breakpoint($mid-break) {
+			@include span-columns($mid-break / 3, $mid-break);
+			@include omega;
+			text-align: right;
+			@include g-space('padding-top');
+		}
+		@include at-breakpoint($large-break) {
+			@include span-columns($large-break / 4, $large-break);
+			@include omega;
+		}
+	}
+
+}
