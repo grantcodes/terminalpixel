@@ -8,7 +8,7 @@ READMORE
 
 ## !Bangs
 
-!Bangs are DuckDuckGo's killer feature. Basically they are shortcuts to perform specific searches, so in a web development world typing `!gh boilerlate` will search for "boilerplate" on GitHub and `!jq on` will search for "on" in the jQuery documentation.
+!Bangs are DuckDuckGo's killer feature. Basically they are shortcuts to perform specific searches, so in a web development world typing `!gh boilerplate` will search for "boilerplate" on GitHub and `!jq on` will search for "on" in the jQuery documentation.
 
 There are literally [**hundreds** of them](https://duckduckgo.com/bang.html). And it's not just limited to web developement, you can search maps, amazon, images, recipes, dictionaries, twitter and basically anything else you can think of.
 
