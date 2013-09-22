@@ -12,7 +12,7 @@ I create thoroughly modern websites using the latest and greatest technologies. 
 
 ## Keeping Things Simple
 
-I pride myself in keeping things simple in everything I do, I create simply beautiful websites and don't confuse things by using a bunch of technical jargon or developing over complicated solutions for basic problems
+I pride myself in keeping things simple in everything I do, I create simply beautiful websites and don't confuse things by using a bunch of technical jargon or developing over complicated solutions for basic problems.
 
 I don't offer any unnecessary services that someone else will likely be able to do better, I don't rip you off for hosting, I can recommend you my [favourite company](http://www.webfaction.com/signup?affiliate=terminalpixl) and set it all up for you.
 
