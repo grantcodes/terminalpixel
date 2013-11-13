@@ -10,7 +10,7 @@
         $sex     = $_POST['sex'];
         $budget  = $_POST['budget'];
         $site    = $_POST['site'];
-        $to      = 'site@terminalpixel.co.uk';
+        $to      = 'blether@terminalpixel.co.uk';
 
         if ('' == $subject) {
             $subject = 'A New Adventurer Arrived!';
