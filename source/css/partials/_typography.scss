@@ -51,11 +51,11 @@ blockquote {
 	padding: .5em 1em;
 	margin-left: 1em;
 	padding-right: 0;
-	
+
 	p {
 		margin-bottom: 0;
 	}
-	
+
 	p + p {
 		margin-top: $line-height * 1em;
 	}

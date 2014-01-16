@@ -1,7 +1,8 @@
 
 .head-nav-inner, .footer-inner, .main {
 	@include container($small-break, $mid-break, $large-break);
-	@include g-rems(max-width, 50);
+	// @include g-rems(max-width, 50);
+	max-width: 50em;
 	margin: 0 auto;
 	// padding: 0 $grid-padding;
 }
@@ -19,7 +20,7 @@
 .main-nav {
 	@include at-breakpoint($mid-break) {
 		@include g-space(margin-bottom, 1.8);
-		
+
 		li:first-child + li {
 			min-width: 50%; // Make wide so lines split to 2 by 2
 		}
@@ -30,6 +31,32 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
+	}
+}
+
+.intro-section {
+	@extend %clearfix;
+}
+
+.sexy-man {
+	max-width: 13em;
+	margin: 0 auto;
+	@include trailer;
+	@include at-breakpoint($large-break lt-ie9) {
+		max-width: 100%;
+		@include span-columns($large-break/3, $large-break);
+	}
+}
+
+.tagline {
+	margin: 0 auto;
+	@include at-breakpoint($large-break lt-ie9) {
+		margin-top: 1.9em;
+		@include span-columns($large-break/3 * 2, $large-break);
+		margin-right: 0;
+	}
+	@include at-breakpoint($extra-large-break) {
+		margin-top: .5em;
 	}
 }
 

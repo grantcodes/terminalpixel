@@ -11,7 +11,7 @@ $icon-pixel-size: 1;
 	position: relative;
 	background-color: $v-light-blue;
 	color: $blue;
-	
+
 	span {
 		display: block;
 		width: 1em;
@@ -41,43 +41,70 @@ pre {
 }
 
 .tagline {
+    max-width: 6.4em;
     font-size: 2.5em;
+	text-align: center;
     @include at-breakpoint($mid-break) {
         font-size: 4em;
     }
     @include at-breakpoint($large-break) {
-        font-size: 5em;
+        // font-size: 4.6em;
     }
-	text-align: center;
+    @include at-breakpoint($extra-large-break) {
+        font-size: 5em;
+        text-align: left;
+    }
 	text-transform: uppercase;
 	font-weight: 900;
 	font-family: pixelated;
 	line-height: .8;
-	
+
 	span {
 		display: block;
 		padding: 0;
 		margin: 0;
+        vertical-align: middle;
 	}
-}
-.i-make {
-	font-size: 1.599em;
-	position: relative;
-	left: .025em;
+
+    .im {
+        font-size: 1.87em;
+        float: left;
+        position: relative;
+        top: -.08em;
+    }
+
+    .grant {
+        font-size: 1.03em;
+        float: right;
+    }
+
+    .richmond {
+        font-size: .7em;
+        float: right;
+    }
+
+    .and-i-make-websites {
+        clear: both;
+        font-size: 0.5em;
+    }
+
 }
 
 
 .info-text h2 {
-	font-size: $xlargeem;
+	font-size: $largeem;
+    @include at-breakpoint($large-break lt-ie9) {
+        font-size: $xlargeem;
+    }
 }
 
 .work-item {
     border-bottom: 1px solid mix($text-c, $bgc, 10%);
-    
+
     &:last-child {
         border-bottom-style: none;
     }
-    
+
     a img {
         border: .5em solid $link-c;
         @include transition(all .3s);
@@ -101,7 +128,7 @@ pre {
     font-family: monospace;
     font-weight: bold;
     font-size: $smallem;
-    
+
     &.middleman {
         background-color: $middleman;
     }
@@ -137,10 +164,10 @@ $star-width: 1.2em;
     padding: 0;
     margin: 0;
     list-style: none;
-    
+
     li {
         display: block;
-        
+
         &:after {
             display: block;
             content: '';
@@ -157,11 +184,11 @@ $star-width: 1.2em;
         @include at-breakpoint ($mid-break) {
             @include span-columns (4, 8);
             @include nth-omega(2n);
-            
+
             &:nth-child(2n - 1) {
                 clear: both;
             }
-        }   
+        }
     }
 
     .one:after {
@@ -172,55 +199,55 @@ $star-width: 1.2em;
     .two:after {
         margin-right: $star-width * 4;
         width:$star-width;
-        
+
     }
 
     .three:after {
         margin-right: $star-width * 3.5;
         width:$star-width * 1.5;
-        
+
     }
 
     .four:after {
         margin-right: $star-width * 3;
         width:$star-width * 2;
-        
+
     }
 
     .five:after {
         margin-right: $star-width * 2.5;
         width:$star-width * 2.5;
-        
+
     }
 
     .six:after {
         margin-right: $star-width * 2;
         width:$star-width * 3;
-        
+
     }
 
     .seven:after {
         margin-right: $star-width * 1.5;
         width:$star-width * 3.5;
-        
+
     }
 
     .eight:after {
         margin-right: $star-width * 1;
         width:$star-width * 4;
-        
+
     }
 
     .nine:after {
         margin-right: $star-width * .5;
         width:$star-width * 4.5;
-        
+
     }
 
     .ten:after {
         margin-right: $star-width * 0;
         width:$star-width * 5;
-        
+
     }
 }
 
@@ -287,5 +314,19 @@ $star-width: 1.2em;
         &:after {
             @include transform(none);
         }
+    }
+}
+
+.sexy-man {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid darken($bgc, 20%);
+    box-shadow: inset -1px -1px 4px rgba(0,0,0,.3);
+
+     img {
+        width: 100%;
+        border-radius: 50%;
+        display: block;
+        vertical-align: middle;
     }
 }

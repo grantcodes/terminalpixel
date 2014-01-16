@@ -16,7 +16,7 @@
             $subject = 'A New Adventurer Arrived!';
         }
         $headers = 'From: ' . $email . "\r\n";
-        $body = $message . '\r\n Budget: ' . $budget . 'Site: ' . $site . " \r\n From " . $name . ' ' . $sex;
+        $body = $message . "\r\n Budget: " . $budget . 'Site: ' . $site . " \r\n \r\n From " . $name . ' ' . $sex;
         if (mail($to, $subject, $body, $headers)) {
             if (!$site) {
                 //contact success
