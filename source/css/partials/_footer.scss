@@ -4,7 +4,7 @@
 	background-color: $footer-bgc;
 	color: $footer-c;
 	text-align: center;
-	
+
 	a, h1 {
 		color: $footer-c;
 	}
@@ -15,17 +15,21 @@
 	height: 130px;
 	fill: $footer-bgc;
 	display: block;
+	rect {
+		// @include animation(pixel-scroll 20s linear infinite);
+		@include animation(pixel-scroll 2s reverse);
+	}
 }
 
 .social-nav {
 	font-size: $xlargeem;
-	
+
 	a {
 		text-decoration: none;
 		display: inline-block;
 		margin: 0 .5em;
 		opacity: 0.7;
-		
+
 		&:hover, &:focus, &:active {
 			opacity: 1;
 			@include transform(scale(1.05));
