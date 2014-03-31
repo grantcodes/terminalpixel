@@ -1,12 +1,12 @@
 ---
-title: About // Terminal Pixel
+title: About // Terminal Pixel // Scottish Freelance Web Developer
 ---
 
 # About Me
 
 <img class="freedom" src="../img/scottish-flag.png" alt="The Flag of Scotland">
 
-I am a proudly Scottish web designer and developer.
+I am a Dundee based Scottish web designer and developer.
 
 I create thoroughly modern websites using the latest and greatest technologies. I believe that everything I build should be accessible on every device imaginable, including future ones. I make sure all my websites work on any sized device.
 
@@ -25,11 +25,11 @@ I take pride in my work. I don't do rush jobs &mdash; I take my time and thoroug
 <ul class="skill-list">
 	<li class="eight">HTML5</li>
 	<li class="nine">CSS3</li>
-	<li class="eight">WordPress</li>
+	<li class="nine">WordPress</li>
 	<li class="seven">PHP</li>
-	<li class="seven">jQuery</li>
-	<li class="six">JavaScript</li>
+	<li class="eight">jQuery</li>
+	<li class="seven">JavaScript</li>
 	<li class="four">Node.js</li>
 	<li class="eight">sass</li>
-	<li class="five">git</li>
+	<li class="seven">git</li>
 </ul>
