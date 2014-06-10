@@ -1,3 +1,24 @@
+- title: Indigo Memoirs
+  url: http://www.indigomemoirs.com/
+  image: indigo-memoirs.jpg
+  source:
+  tech: [wordpress, sass, html5, css3, js, jquery]
+  description: >
+      <blockquote>Indigo Memoirs is an independent lifestyle platform connecting Londoners to the city’s most meaningful experiential activities.</blockquote>
+      <p>Built on WordPress, Indigo Memoirs is collation of the best experiences in London.</p>
+      <p>The website contains may advanced features such as social registration, user manageable events, a business directory and much more.</p>
+      <p>The site was designed by the wonderful <a href="http://www.emilyforgot.co.uk/">Emily Alston</a></p>
+
+- title: Dundee MakerSpace
+  url: http://www.dundeemajerspace.co.uk/
+  source: https://github.com/DundeeMakerSpace/website
+  image: dundee-makerspace.jpg
+  tech: [wordpress, sass, html5, css3, js]
+  description: >
+      <p>A minimalistic site with a lot of hidden functionality.</p>
+      <p>Behind the scenes there is an events system, paid membership subscriptions and resources and information for members</p>
+      <p>Logo lovingly crafted by <a href="http://lowtek.co.uk/">Alastair Low</a></p>
+
 - title: Dundee Tech Meetup
   url: http://www.dundeetechmeetup.com/
   source: https://github.com/terminalpixel/dundee-tech-meetup
@@ -19,10 +40,10 @@
 
 
 
-- title: Terminal Pixel
-  url: http://www.terminalpixel.co.uk/
-  source: https://github.com/terminalpixel/terminalpixel/
-  image: terminal-pixel.jpg
-  tech: [middleman, sass, html5, css3, js]
-  description: >
-      <p>This website that you are looking at right now. I might be cheating by including it here but I'm quite proud of it and it serves as a good example of my skillset.</p>
+# - title: Terminal Pixel
+#   url: http://www.terminalpixel.co.uk/
+#   source: https://github.com/terminalpixel/terminalpixel/
+#   image: terminal-pixel.jpg
+#   tech: [middleman, sass, html5, css3, js]
+#   description: >
+#       <p>This website that you are looking at right now. I might be cheating by including it here but I'm quite proud of it and it serves as a good example of my skillset.</p>
