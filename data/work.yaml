@@ -10,7 +10,7 @@
       <p>The site was designed by the wonderful <a href="http://www.emilyforgot.co.uk/">Emily Alston</a></p>
 
 - title: Dundee MakerSpace
-  url: http://www.dundeemajerspace.co.uk/
+  url: http://www.dundeemakerspace.co.uk/
   source: https://github.com/DundeeMakerSpace/website
   image: dundee-makerspace.jpg
   tech: [wordpress, sass, html5, css3, js]
